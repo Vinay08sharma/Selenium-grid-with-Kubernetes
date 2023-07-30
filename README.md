@@ -16,11 +16,11 @@ Scaling test automation using selenium grid and using the power of kubernetes
 - Start minikube (We will make us of minikube with docker)
   ```minikube start --vm-driver=virtualbox --insecure-registry="gcr.io"```
 - Create services
-  ```kubectl create -f selenium-hub-deployment.yaml```
-  ```kubectl create -f selenium-hub-service.yaml```
-  ```kubectl create -f selenium-node-chrome-deployment.yaml```
-  ```kubectl create -f selenium-node-firefox-deployment.yaml```
-  ```kubectl expose deployment selenium-hub-demo --type=NodePort```
+  - ```kubectl create -f selenium-hub-deployment.yaml```
+  - ```kubectl create -f selenium-hub-service.yaml```
+  - ```kubectl create -f selenium-node-chrome-deployment.yaml```
+  - ```kubectl create -f selenium-node-firefox-deployment.yaml```
+  - ```kubectl expose deployment selenium-hub-demo --type=NodePort```
 ### By now the services should be up & running
 
 ## Get the url for the grid console
